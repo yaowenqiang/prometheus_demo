@@ -23,6 +23,15 @@ metrics start with node_
 
 rate(node_cpu_seconds_total{mode="system"}[1m])
 
+### WMI Exporter
+
++ Windows Management Instrumentation
++ Not avaiable on Official Prometheus website
+
+https://github.com/prometheus-community/windows_exporter
+
+
+
 
 
 
