@@ -44,3 +44,4 @@ Gauge are typically used for measured values like temperatures or current memory
 
 
 
+curl "localhost:5006?[1-10]"

@@ -19,6 +19,6 @@ class HandleRequests(http.server.BaseHTTPRequestHandler):
         #REQUEST_LATENCY_TIME.observe(end_time) 
 
 if __name__ == "__main__":
-    start_http_server(5001)
-    server = http.server.HTTPServer(('178.62.224.102', 5000), HandleRequests)
+    start_http_server(5005)
+    server = http.server.HTTPServer(('0.0.0.0', 5006), HandleRequests)
     server.serve_forever()
