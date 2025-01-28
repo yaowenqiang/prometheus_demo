@@ -23,5 +23,5 @@ func startMyApp() {
 	}).Methods("GET")
 
 	log.Println("Starting the application server...")
-	http.ListenAndServe("0.0.0.0:8000", router)
+	http.ListenAndServe("0.0.0.0:8002", router)
 }

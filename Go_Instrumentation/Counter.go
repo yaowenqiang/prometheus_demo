@@ -33,5 +33,5 @@ func startMyApp() {
 
 	log.Println("Starting the application server, Counter Metrics...")
 	router.Path("/metrics").Handler(promhttp.Handler())
-	http.ListenAndServe("0.0.0.0:8000", router)
+	http.ListenAndServe("0.0.0.0:8005", router)
 }
