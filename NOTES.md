@@ -45,3 +45,31 @@ Gauge are typically used for measured values like temperatures or current memory
 
 
 curl "localhost:5006?[1-10]"
+
+## PromQL
+
+### Datatypes 
+
+#### Instant Vector 
+
++ A Set of time series containings a single sample for each time series, all sharing the same timestamp
+
+#### Range Vector
+
++ A set of time series containing a range of data points over time for each time series
+
+#### Scalar
+
++ A simple numeric floating point value
+
+#### String
+
+## Matcher types
+
++ Equality(=) - Select labels that are exactly equal to provided String
++ Not Equality(!=) - Select labels that are not equal to provided String
++ Regular Expression Equality(=~) - Select labels that regex equal to provided String
++ Regular Expression Not Equality(!~) - Select labels that regex not equal to provided String
+
+
+
