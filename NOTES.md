@@ -71,5 +71,12 @@ curl "localhost:5006?[1-10]"
 + Regular Expression Equality(=~) - Select labels that regex equal to provided String
 + Regular Expression Not Equality(!~) - Select labels that regex not equal to provided String
 
+### Binary operator
+
+### Groupers
+
+sum without(job,cpu, mode)(node_cpu_seconds_total{mode!="idle"})
+
+sum without(job,cpu, mode)(rate(node_cpu_seconds_total{mode!="idle"}[5m]))
 
 
